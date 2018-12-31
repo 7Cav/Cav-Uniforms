@@ -6,6 +6,8 @@ Ribbon rack builder is the portion currently under active development.
 
 ## Python Dependencies
 
+Python 3.7.x
+
 [Pillow (PIL Fork)](https://pillow.readthedocs.io/en/5.3.x/)
 
 [Requests](http://docs.python-requests.org/en/master/#)
