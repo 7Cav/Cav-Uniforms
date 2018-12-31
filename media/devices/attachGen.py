@@ -44,7 +44,7 @@ leafs = [
 ]
 
 # Order of progression for valor w/ oak leaf cluster devices
-valLeafs = [
+leafsV = [
     # "1",
     "2",
     "3",
@@ -96,7 +96,7 @@ stars = [
 deviceTypes = {
     "knots": knots,
     "leafs": leafs,
-    "valLeafs": valLeafs,
+    "valLeafs": leafsV,
     "numberals": numerals,
     "stars": stars
 }
