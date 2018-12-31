@@ -8,8 +8,11 @@ from library import ribbonBuilder, parseMilpac
 
 def getOutput():
     # Write ind awards output to JSON file and open it for viewing
+    print("Enter milpac ID:")
+    inp = input()
+
     with open("userTest.json", "w") as f:
-        json.dump(parseMilpac(446).indAwards(), f, indent=4)     
+        json.dump(parseMilpac(int(inp)).indAwards(), f, indent=4)     
     webbrowser.open("userTest.json")
     return 0
 
@@ -19,8 +22,11 @@ def rackImage():
     ribbonCount = int(input())
 
     grid = ribbonBuilder(ribbonCount).setupGrid()
-    imgRack = Image.new("RGBA", (ribbonBuilder(ribbonCount).rackDimensions()[
-                        "width"], ribbonBuilder(ribbonCount).rackDimensions()["height"]))
+    imgRack = Image.new("RGBA", 
+    (
+        ribbonBuilder(ribbonCount).rackDimensions()["width"], 
+        ribbonBuilder(ribbonCount).rackDimensions()["height"]
+    ))
 
     testImg = Image.open("./testRibbons/1.png")
 
@@ -37,4 +43,4 @@ def rackImage():
 
     return 0
 
-rackImage()
+getOutput()
