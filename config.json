@@ -1,0 +1,372 @@
+{
+    "ribbonSizes": {
+        "width": 100,
+        "height": 27
+    },
+
+    "awardsOrder": {
+        "_commentSN": "shortName is what the file name will be w/o extension",
+        "_commentD": "device much match the folder name the devices are in. see ./media/devices for folders",
+        "individual":[
+            {
+                "longName": "Medal of Honor",
+                "shortName": "MOH",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Brigadier General Krazee Lifetime Achievement Medal",
+                "shortName": "KRAZEE",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Command Sergeant-Major Ronnie \"Coldblud\" Bussey Lifetime Achievement Medal",
+                "shortName": "COLDBLUD",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Army Distinguished Service Cross",
+                "shortName": "DSC",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Defense Distinguished Service Medal",
+                "shortName": "DDSM",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Army Distinguished Service Medal",
+                "shortName": "DSM",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Silver Star",
+                "shortName": "SS",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Defense Superior Service Medal",
+                "shortName": "DSSM",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Legion of Merit",
+                "shortName": "LOM",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Distinguished Flying Cross",
+                "shortName": "DFC",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Soldier's Medal",
+                "shortName": "SM",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Bronze Star with Valor",
+                "shortName": "BSv",
+                "device": "leafsV",
+                "count": 0
+            },
+            {
+                "longName": "Bronze Star Medal",
+                "shortName": "BSM",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Purple Heart",
+                "shortName": "PH",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Defense Meritorious Service Medal",
+                "shortName": "DMSM",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Meritorious Service Medal",
+                "shortName": "MSM",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Army Air Medal",
+                "shortName": "AIR",
+                "device": "numerals",
+                "count": 0
+            },
+            {
+                "longName": "Joint Service Commendation Medal",
+                "shortName": "JSCM",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Army Commendation Medal With Valor",
+                "shortName": "ARCOMv",
+                "device": "leafsV",
+                "count": 0
+            },
+            {
+                "longName": "Army Commendation Medal",
+                "shortName": "ARCOM",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Joint Service Achievement Medal",
+                "shortName": "JSAM",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Army Achievement Medal",
+                "shortName": "AAM",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Prisoner of War Medal",
+                "shortName": "POW",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Army Good Conduct Medal",
+                "shortName": "GCM",
+                "device": "knots",
+                "count": 0
+            },
+            {
+                "longName": "Armed Forces Expeditionary Medal",
+                "shortName": "AFEM",
+                "device": "stars",
+                "count": 0
+            },
+            {
+                "longName": "Afghanistan Campaign Medal",
+                "shortName": "AFGHAN",
+                "device": "stars",
+                "count": 0
+            },
+            {
+                "longName": "Iraq Campaign Medal",
+                "shortName": "IRAQ",
+                "device": "stars",
+                "count": 0
+            },
+            {
+                "longName": "Global War on Terrorism Expeditionary Medal",
+                "shortName": "GWOT",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "National Defense Service Medal",
+                "shortName": "NATL",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Armed Forces Service Medal",
+                "shortName": "AFSM",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Humanitarian Service Medal",
+                "shortName": "HSM",
+                "device": "stars",
+                "count": 0
+            },
+            {
+                "longName": "Donation Ribbon",
+                "shortName": "DON",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "7th Cavalry Server Upgrade Award",
+                "shortName": "SVRUP",
+                "device": "stars",
+                "count": 0
+            },
+            {
+                "longName": "StackUp Donation Medal w/Gold Knot",
+                "shortName": "STKUPg",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "StackUp Donation Medal w/Silver Knot",
+                "shortName": "STKUPs",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "StackUp Donation Medal w/Bronze Knot",
+                "shortName": "STKUPb",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "StackUp Donation Medal",
+                "shortName": "STKUP",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Outstanding Volunteer Service Medal",
+                "shortName": "OVSM",
+                "device": "stars",
+                "count": 0
+            },
+            {
+                "longName": "NCO Professional Development Ribbon",
+                "shortName": "NCO",
+                "device": "numerals",
+                "count": 0
+            },
+            {
+                "longName": "Honor Graduate Ribbon",
+                "shortName": "HG",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Army Service Ribbon",
+                "shortName": "ASR",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Cavalry Centurion Medal",
+                "shortName": "CENT",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "United Nations Service Medal",
+                "shortName": "UNSM",
+                "device": "stars",
+                "count": 0
+            },
+            {
+                "longName": "Overseas Service Ribbon",
+                "shortName": "OSR",
+                "device": "numerals",
+                "count": 0
+            },
+            {
+                "longName": "Vietnam Service Ribbon",
+                "shortName": "VIETNAM",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Squad Service Ribbon",
+                "shortName": "SQUAD",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "World War II Service Ribbon",
+                "shortName": "WWII",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Recruiting Service Ribbon",
+                "shortName": "RSR",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Sniper Ribbon",
+                "shortName": "SNIPER",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Basic Assault Course Ribbon",
+                "shortName": "BAAC",
+                "device": "leafs",
+                "count": 0
+            }
+        ],
+    
+        "unit": [
+            {
+                "longName": "Presidential Unit Citation",
+                "shortName": "PUC",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Joint Meritorious Unit Award",
+                "shortName": "JMUC",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Army Valorous Unit Award",
+                "shortName": "VUC",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Meritorious Unit Commendation",
+                "shortName": "MUC",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Superior Unit Award",
+                "shortName": "SUC",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Black Ops Unit Citation",
+                "shortName": "BOC",
+                "device": "leafs",
+                "count": 0
+            }
+        ]
+    },
+
+
+    "attachments": {
+        "knots": [
+
+        ],
+
+        "leafs": [
+
+        ],
+        "valLeafs": [
+
+        ],
+        "numerals": [
+
+        ],
+        "stars": [
+            
+        ]
+    }
+}
