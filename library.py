@@ -7,12 +7,12 @@ from PIL import Image
 
 class parseMilpac:
     def __init__(self, milpacID):
-        html = requests.get("https://7cav.us/rosters/profile?uniqueid="+str(milpacID)).text
-        regex = r"awardTitle..(.*)</td>"
-
         with open("config.json") as f:
             # Get object that contains the config for each award
             self.awardConfig = json.load(f)["awardsOrder"]
+
+        html = requests.get("https://7cav.us/rosters/profile?uniqueid="+str(milpacID)).text
+        regex = r"awardTitle..(.*)</td>"
 
         self.milpacAwards = []
         for rawMatch in re.findall(regex, html):
