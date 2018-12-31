@@ -25,12 +25,12 @@ for x in range(1, ribbonNum+1):
     img = Image.new("RGB", (ribbonWidth, ribbonHeight), color="White")
     draw = ImageDraw.Draw(img)
 
-    textFont = ImageFont.truetype("arial.ttf", 25)
+    textFont = ImageFont.truetype("arial.ttf", 14)
 
     if x < 10:
-        xCoord = 45
+        xCoord = 18
     else:
-        xCoord = 37
+        xCoord = 13
 
-    draw.text((xCoord,0), str(x), (0,0,0), font=textFont)
+    draw.text((xCoord,-.5), str(x), (0,0,0), font=textFont)
     img.save(str(x)+".png")
