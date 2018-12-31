@@ -1,7 +1,9 @@
 {
     "ribbonSizes": {
+        "_comment": "width and height MUST be the pixel dimensions of every ribbon image file, including devices",
         "width": 43,
-        "height": 13
+        "height": 13,
+        "fileType": ".png"
     },
 
     "awardsOrder": {
