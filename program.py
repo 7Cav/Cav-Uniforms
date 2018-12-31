@@ -36,3 +36,5 @@ def rackImage():
     webbrowser.open("Ribbon Rack.png")  # NOTE FOR DEBUGGING ONLY
 
     return 0
+
+rackImage()

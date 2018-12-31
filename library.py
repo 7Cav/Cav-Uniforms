@@ -64,8 +64,8 @@ class ribbonBuilder:
         '''
         ribNum = self.ribNum
 
-        ribbonHeight = 27  # Height of an individual ribbon.
-        ribbonWidth = 100  # Width of an individual ribbon.
+        ribbonHeight = self.ribbonHeight  # Height of an individual ribbon.
+        ribbonWidth = self.ribbonWidth  # Width of an individual ribbon.
 
         rows = 0
 
@@ -112,17 +112,17 @@ class ribbonBuilder:
         up from there, in order of precedence of the ribbons.
         '''
 
-        style = self.rackDimensions()["style"]
-        rows = self.rackDimensions()["rows"]
-        imgHeight = self.rackDimensions()["height"]
-        imgWidth = self.rackDimensions()["width"]
-        ribCount = self.ribNum
+        self.style = self.rackDimensions()["style"]
+        self.rows = self.rackDimensions()["rows"]
+        self.imgHeight = self.rackDimensions()["height"]
+        self.imgWidth = self.rackDimensions()["width"]
+        self.ribCount = self.ribNum
 
-        def regular(rows, imgHeight, imgWidth, ribCount):
+        def regular():
             '''Grid builder for rack width of 3 ribbons'''
             grid = []
 
-            for row in range(1, rows + 1):
+            for row in range(1, self.rows + 1):
                 if row == 1:
                     # If first row do not shift x up for 1 pixel spacing
                     pixelSpace = 0
@@ -130,35 +130,35 @@ class ribbonBuilder:
                     # Else accound for 1 pixel spacing between each ribbon
                     pixelSpace += 1
 
-                y = imgHeight - (self.ribbonHeight * row + pixelSpace)
+                y = self.imgHeight - (self.ribbonHeight * row + pixelSpace)
 
-                if ribCount >= 3:
-                    xVals = [0, 0 + (101 * 1), 0 + (101 * 2)]
+                if self.ribCount >= 3:
+                    xVals = [0, (self.ribbonWidth + 1) * 1, (self.ribbonWidth + 1) * 2]
                     xVals.reverse()
                     for x in xVals:
                         grid.append([x, y])
-                    ribCount -= 3
-                elif ribCount == 2:
-                    xVals = [imgWidth // 2 - 101, imgWidth // 2]
+                    self.ribCount -= 3
+                elif self.ribCount == 2:
+                    xVals = [self.imgWidth // 2 - (self.ribbonWidth + 1), self.imgWidth // 2]
                     xVals.reverse()
                     for x in xVals:
                         grid.append([x, y])
-                    ribCount -= 2
-                elif ribCount == 1:
-                    xVals = [imgWidth // 2 - (self.ribbonWidth // 2)]
+                    self.ribCount -= 2
+                elif self.ribCount == 1:
+                    xVals = [(self.imgWidth // 2) - (self.ribbonWidth // 2)]
                     xVals.reverse()
                     for x in xVals:
                         grid.append([x, y])
-                    ribCount -= 1
+                    self.ribCount -= 1
 
             return grid
 
-        def large(rows, imgHeight, imgWidth, ribCount):
+        def large():
             '''Grid builder for rack width of 4 ribbons'''
 
             grid = []
 
-            for row in range(1, rows + 1):
+            for row in range(1, self.rows + 1):
                 if row == 1:
                     # If first row do not shift x up for 1 pixel spacing
                     pixelSpace = 0
@@ -166,35 +166,53 @@ class ribbonBuilder:
                     # Else accound for 1 pixel spacing between each ribbon
                     pixelSpace += 1
 
-                y = imgHeight - (self.ribbonHeight * row + pixelSpace)
+                y = self.imgHeight - (self.ribbonHeight * row + pixelSpace)
 
                 xVals = []
                 for i in range(1, 4 + 1):  # 4 is the max width, in ribbons, of the large rack
-                    xVals.append(imgWidth - (101 * i))
+                    xVals.append(self.imgWidth - ((self.ribbonWidth + 1) * i))
                 # xVals = [0, 101, 202, 303] # X values where ribbons will be placed from left to right, factors in 1px spacing.
                 # xVals.reverse() # Reverses order due to grid being build on a right to left placement or ribbons
 
                 if row <= 2:  # First two rows, 4 ribbons each
                     for x in xVals:
                         grid.append([x, y])
-                    ribCount -= 4
+                    self.ribCount -= 4
+
                 elif row <= 5:  # Rows 3 to 5, 3 ribbons each
-                    for x in xVals[:3]:
-                        grid.append([x, y])
-                    ribCount -= 3
-                else:  # Rows 6 and up, 2 ribbons each
-                    if ribCount >= 2:  # If 2 ribbons left
+                    if self.ribCount > 8:
+                        # Prep ribCount for further values
+                        self.ribCount -= 8
+                    
+                    if self.ribCount >= 3:
+                        # If able to build a full row of 3 ribbons
+                        for x in xVals[:3]:
+                            grid.append([x, y])
+                            self.ribCount -= 1
+                    elif self.ribCount == 2:
+                        # If able to build a row of 2 ribbons
                         for x in xVals[:2]:
                             grid.append([x, y])
-                        ribCount -= 2
+                            self.ribCount -= 1
+                    else:
+                        # Build a row of one ribbon
+                        for x in xVals[:1]:
+                            grid.append([x, y])
+                            self.ribCount -= 1
+                        
+                else:  # Rows 6 and up, 2 ribbons each
+                    if self.ribCount >= 2:  # If 2 ribbons left
+                        for x in xVals[:2]:
+                            grid.append([x, y])
+                        self.ribCount -= 2
                     else:  # If one ribbon left
                         for x in xVals[:1]:
                             grid.append([x, y])
-                        ribCount -= 1
+                        self.ribCount -= 1
 
             return grid
 
-        if style == "Regular":
-            return regular(rows, imgHeight, imgWidth, ribCount)
+        if self.style == "Regular":
+            return regular()
         else:
-            return large(rows, imgHeight, imgWidth, ribCount)
+            return large()
