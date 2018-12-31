@@ -1,7 +1,7 @@
 {
     "ribbonSizes": {
-        "width": 100,
-        "height": 27
+        "width": 43,
+        "height": 13
     },
 
     "awardsOrder": {
@@ -347,26 +347,6 @@
                 "device": "leafs",
                 "count": 0
             }
-        ]
-    },
-
-
-    "attachments": {
-        "knots": [
-
-        ],
-
-        "leafs": [
-
-        ],
-        "valLeafs": [
-
-        ],
-        "numerals": [
-
-        ],
-        "stars": [
-            
         ]
     }
 }

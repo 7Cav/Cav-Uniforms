@@ -5,14 +5,24 @@ white background. Each image will also have a
 number centered on it to help easily distinguish
 between each ribbon.
 
+Script functions independently of any parent directories.
 '''
 
 from PIL import Image, ImageFont, ImageDraw
+import os
+
+# Changes working directory so working path is 
+abspath = os.path.abspath(__file__)
+dname = os.path.dirname(abspath)
+os.chdir(dname)
+
+ribbonWidth = 43
+ribbonHeight = 13
 
 ribbonNum = 50 # Amount of ribbons to create
 
 for x in range(1, ribbonNum+1):
-    img = Image.new("RGB", (100, 27), color="White")
+    img = Image.new("RGB", (ribbonWidth, ribbonHeight), color="White")
     draw = ImageDraw.Draw(img)
 
     textFont = ImageFont.truetype("arial.ttf", 25)
