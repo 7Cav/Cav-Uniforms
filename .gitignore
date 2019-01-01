@@ -2,3 +2,6 @@ Ribbon Rack.png
 userTest.json
 .vscode/
 __pycache__/
+build/
+dist/
+program.spec
