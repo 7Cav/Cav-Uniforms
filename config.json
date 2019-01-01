@@ -1,14 +1,21 @@
 {
     "ribbonSizes": {
-        "_comment": "width and height MUST be the pixel dimensions of every ribbon image file, including devices",
+        "_comment": "Width and height MUST be the pixel dimensions of every ribbon image file, including devices.",
         "width": 43,
         "height": 13,
         "fileType": ".png"
     },
 
+    "medalSizes": {
+        "_comment": "Width and height MUST be the pixel dimensions of every ribbon image file, including devices.",
+        "width": 0,
+        "height": 0,
+        "fileType": ".png"
+    },
+
     "awardsOrder": {
-        "_commentSN": "shortName is what the file name will be w/o extension",
-        "_commentD": "device much match the folder name the devices are in. see ./media/devices for folders",
+        "_commentSN": "ShortName is what the file name will be w/o extension.",
+        "_commentD": "Device much match the folder name the devices are in. see ./media/devices for folders.",
         "individual":[
             {
                 "longName": "Medal of Honor",
