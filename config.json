@@ -377,172 +377,228 @@
             }
         ],
 
+        "_comment_rightChest": "Indicates if item will appear on their right chest above the ribbon rack.",
+        "_comment_device": "Indicates if item can have stars added to it. Usually only the parachutist badge",
         "badges": [
             {
                 "longName": "Combat Infantry Badge 4th Award",
                 "shortName": "CIB4",
+                "replaces": "CIB3",
+                "rightChest": true,
                 "device": false,
                 "count": 0
             },
             {
                 "longName": "Combat Infantry Badge 3rd Award",
                 "shortName": "CIB3",
+                "replaces": "CIB2",
+                "rightChest": true,
                 "device": false,
                 "count": 0
             },
             {
                 "longName": "Combat Infantry Badge 2nd Award",
                 "shortName": "CIB2",
+                "replaces": "EIB",
+                "rightChest": true,
                 "device": false,
                 "count": 0
             },
             {
                 "longName": "Expert Infantry Badge",
                 "shortName": "EIB",
+                "replaces": "",
+                "rightChest": true,
                 "device": false,
                 "count": 0
             },
             {
                 "longName": "Master Aviator Badge",
                 "shortName": "AVIATORmr",
+                "replaces": "AVIATORsr",
+                "rightChest": false,
                 "device": false,
                 "count": 0
             },
             {
                 "longName": "Senior Aviator Badge",
                 "shortName": "AVIATORsr",
+                "replaces": "AVIATOR",
+                "rightChest": false,
                 "device": false,
                 "count": 0
             },
             {
                 "longName": "Army Aviator Badge",
                 "shortName": "AVIATOR",
+                "replaces": "",
+                "rightChest": false,
                 "device": false,
                 "count": 0
             },
             {
                 "longName": "Master EOD Badge",
                 "shortName": "EODmr",
+                "replaces": "EODsr",
+                "rightChest": false,
                 "device": false,
                 "count": 0
             },
             {
                 "longName": "Senior EOD Badge",
                 "shortName": "EODsr",
+                "replaces": "EOD",
+                "rightChest": false,
                 "device": false,
                 "count": 0
             },
             {
                 "longName": "Basic EOD Badge",
                 "shortName": "EOD",
+                "replaces": "",
+                "rightChest": false,
                 "device": false,
                 "count": 0
             },
             {
                 "longName": "Ranger Tab",
                 "shortName": "RANGER",
+                "replaces": "",
+                "rightChest": false,
                 "device": false,
                 "count": 0
             },
             {
                 "longName": "Sapper Tab",
                 "shortName": "SAPPER",
+                "replaces": "",
+                "rightChest": false,
                 "device": false,
                 "count": 0
             },
             {
                 "longName": "LRRP Tab",
                 "shortName": "LRRP",
+                "replaces": "",
+                "rightChest": false,
                 "device": false,
                 "count": 0
             },
             {
                 "longName": "Pathfinder Badge",
                 "shortName": "PATHFINDER",
+                "replaces": "",
+                "rightChest": false,
                 "device": false,
                 "count": 0
             },
             {
                 "longName": "Air Assault Badge",
                 "shortName": "AIRASSAULT",
+                "replaces": "",
+                "rightChest": false,
                 "device": false,
                 "count": 0
             },
             {
-                "longName": "Master Parachuists Badge",
+                "longName": "Master Parachutist Badge",
                 "shortName": "PARACHUTEmr",
+                "replaces": "PARACHUTEsr",
+                "rightChest": false,
                 "device": false,
                 "count": 0
             },
             {
-                "longName": "PARACHUTEsr",
-                "shortName": "",
+                "longName": "Senior Parachutist Badge",
+                "shortName": "PARACHUTEsr",
+                "replaces": "PARACHUTE",
+                "rightChest": false,
                 "device": false,
                 "count": 0
             },
             {
-                "longName": "PARACHUTE",
-                "shortName": "",
+                "longName": "Basic Parachutist Badge",
+                "shortName": "PARACHUTE",
+                "replaces": "",
+                "rightChest": false,
                 "device": false,
                 "count": 0
             },
             {
                 "longName": "Master MFFP Badge",
                 "shortName": "FREEFALLmr",
+                "replaces": "FREEFALL",
+                "rightChest": false,
                 "device": false,
                 "count": 0
             },
             {
                 "longName": "Basic MFFB Badge",
                 "shortName": "FREEFALL",
+                "replaces": "",
+                "rightChest": false,
                 "device": false,
                 "count": 0
             },
             {
                 "longName": "Cavalry Spurs",
                 "shortName": "SPURS",
+                "replaces": "",
+                "rightChest": false,
                 "device": false,
                 "count": 0
             },
             {
                 "longName": "Best Ranger",
                 "shortName": "RANGERisSMART",
-                "device": false,
-                "count": 0
-            },
-            {
-                "longName": "Senior Instructor Badge",
-                "shortName": "INSTRUCTORsr",
+                "replaces": "",
+                "rightChest": false,
                 "device": false,
                 "count": 0
             },
             {
                 "longName": "Master Instructor Badge",
                 "shortName": "INSTRUCTORmr",
+                "replaces": "INSTRUCTORsr",
+                "rightChest": false,
                 "device": false,
                 "count": 0
             },
             {
-                "longName": "Gold Recruiter Badge",
-                "shortName": "RECRUITERgold",
-                "device": false,
-                "count": 0
-            },
-            {
-                "longName": "Senior Recruiter Badge",
-                "shortName": "RECRUITERsr",
+                "longName": "Senior Instructor Badge",
+                "shortName": "INSTRUCTORsr",
+                "replaces": "",
+                "rightChest": false,
                 "device": false,
                 "count": 0
             },
             {
                 "longName": "Master Recruiter Badge",
                 "shortName": "RECRUITERmr",
+                "replaces": "RECRUITERsr",
+                "rightChest": false,
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "Senior Recruiter Badge",
+                "shortName": "RECRUITERsr",
+                "replaces": "RECRUITER",
+                "rightChest": false,
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "Gold Recruiter Badge",
+                "shortName": "RECRUITER",
+                "replaces": "",
+                "rightChest": false,
                 "device": false,
                 "count": 0
             }
         ],
-        
-        "_comment_Level": "Level is what level they have obtained. 1=Marksman, 2=Sharpshooter, 3=Expert",
+
+        "_comment_Level": "Level is what level the trooper has obtained. 1=Marksman, 2=Sharpshooter, 3=Expert",
         "marksmaship": [
             {
                 "longName": "Rifle",
