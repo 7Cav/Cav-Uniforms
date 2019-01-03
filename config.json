@@ -14,8 +14,9 @@
     },
 
     "awardsOrder": {
-        "_commentSN": "ShortName is what the file name will be w/o extension.",
-        "_commentD": "Device much match the folder name the devices are in. see ./media/devices for folders.",
+        "_comment_ShortName": "ShortName is what the file name will be w/o extension.",
+        "_comment_Device": "Device much match the folder name the devices are in. see ./media/devices for folders.",
+        "_comment_Order": "All items are ordered in their importantance with the first item (MOH) being the most important.",
         "individual":[
             {
                 "longName": "Medal of Honor",
@@ -373,6 +374,205 @@
                 "shortName": "BOC",
                 "device": "leafs",
                 "count": 0
+            }
+        ],
+
+        "badges": [
+            {
+                "longName": "Combat Infantry Badge 4th Award",
+                "shortName": "CIB4",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "Combat Infantry Badge 3rd Award",
+                "shortName": "CIB3",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "Combat Infantry Badge 2nd Award",
+                "shortName": "CIB2",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "Expert Infantry Badge",
+                "shortName": "EIB",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "Master Aviator Badge",
+                "shortName": "AVIATORmr",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "Senior Aviator Badge",
+                "shortName": "AVIATORsr",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "Army Aviator Badge",
+                "shortName": "AVIATOR",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "Master EOD Badge",
+                "shortName": "EODmr",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "Senior EOD Badge",
+                "shortName": "EODsr",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "Basic EOD Badge",
+                "shortName": "EOD",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "Ranger Tab",
+                "shortName": "RANGER",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "Sapper Tab",
+                "shortName": "SAPPER",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "LRRP Tab",
+                "shortName": "LRRP",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "Pathfinder Badge",
+                "shortName": "PATHFINDER",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "Air Assault Badge",
+                "shortName": "AIRASSAULT",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "Master Parachuists Badge",
+                "shortName": "PARACHUTEmr",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "PARACHUTEsr",
+                "shortName": "",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "PARACHUTE",
+                "shortName": "",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "Master MFFP Badge",
+                "shortName": "FREEFALLmr",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "Basic MFFB Badge",
+                "shortName": "FREEFALL",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "Cavalry Spurs",
+                "shortName": "SPURS",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "Best Ranger",
+                "shortName": "RANGERisSMART",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "Senior Instructor Badge",
+                "shortName": "INSTRUCTORsr",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "Master Instructor Badge",
+                "shortName": "INSTRUCTORmr",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "Gold Recruiter Badge",
+                "shortName": "RECRUITERgold",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "Senior Recruiter Badge",
+                "shortName": "RECRUITERsr",
+                "device": false,
+                "count": 0
+            },
+            {
+                "longName": "Master Recruiter Badge",
+                "shortName": "RECRUITERmr",
+                "device": false,
+                "count": 0
+            }
+        ],
+        
+        "_comment_Level": "Level is what level they have obtained. 1=Marksman, 2=Sharpshooter, 3=Expert",
+        "marksmaship": [
+            {
+                "longName": "Rifle",
+                "shortName": "RIFLE",
+                "level": 0
+            },
+            {
+                "longName": "Grenade",
+                "shortName": "GRENADE",
+                "level": 0
+            },
+            {
+                "longName": "M-203",
+                "shortName": "M203",
+                "level": 0
+            },
+            {
+                "longName": "Recoilless",
+                "shortName": "MAAWS",
+                "level": 0
+            },
+            {
+                "longName": "Pistol",
+                "shortName": "PISTOL",
+                "level": 0
+            },
+            {
+                "longName": "Aeroweapons",
+                "shortName": "AIR",
+                "level": 0
             }
         ]
     }
