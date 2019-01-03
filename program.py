@@ -1,7 +1,9 @@
 import webbrowser  # NOTE FOR DEBUGGING ONLY
 
 from PIL import Image
+from PIL import PngImagePlugin
 import json
+import os
 
 from library import ribbonBuilder, parseMilpac
 
@@ -11,31 +13,48 @@ def getOutput():
     print("Enter milpac ID:")
     inp = input()
 
+    indAwards = parseMilpac(int(inp)).indAwards()
+
     with open("userTest.json", "w") as f:
-        json.dump(parseMilpac(int(inp)).indAwards(), f, indent=4)     
-    webbrowser.open("userTest.json")
+        json.dump(indAwards, f, indent=4)     
+
+    output = []
+    for val in indAwards:
+        if val["count"] >= 1:
+            output.append(val["shortName"])
+
+    print(output)
+
+    # webbrowser.open("userTest.json")
     return 0
 
 
 def rackImage():
     # TODO Prepare script to recieve awards array
-    ribbonCount = int(input())
+
+    ID = input()
+    indAwards = parseMilpac(int(ID)).indAwards()
+
+    ribbons = []
+    for val in indAwards:
+        if val["count"] >= 1:
+            ribbons.append(val["shortName"])
+    ribbons.reverse()
+
+    ribbonCount = len(ribbons)
 
     grid = ribbonBuilder(ribbonCount).setupGrid()
     imgRack = Image.new("RGBA", 
     (
-        ribbonBuilder(ribbonCount).rackDimensions()["width"], 
+        ribbonBuilder(ribbonCount).rackDimensions()["width"],
         ribbonBuilder(ribbonCount).rackDimensions()["height"]
     ))
-
-    testImg = Image.open("./testRibbons/1.png")
-
     count = 0
-    for ribbon in grid:
+
+    for indx, val in enumerate(ribbons):
         count += 1
-        # TODO Fix file name when preparing script
-        testImg = Image.open("./testRibbons/"+str(count)+".png")
-        imgRack.paste(testImg, (ribbon[0], ribbon[1]))
+        ribbon = Image.open("./media/ribbons/"+str(val)+".gif")
+        imgRack.paste(ribbon, (grid[indx][0], grid[indx][1]))
 
     imgRack.save("Ribbon Rack.png", "PNG")
 
@@ -43,4 +62,4 @@ def rackImage():
 
     return 0
 
-getOutput()
+rackImage()

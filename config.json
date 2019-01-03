@@ -3,14 +3,14 @@
         "_comment": "Width and height MUST be the pixel dimensions of every ribbon image file, including devices.",
         "width": 43,
         "height": 13,
-        "fileType": ".png"
+        "fileType": ".gif"
     },
 
     "medalSizes": {
         "_comment": "Width and height MUST be the pixel dimensions of every ribbon image file, including devices.",
         "width": 0,
         "height": 0,
-        "fileType": ".png"
+        "fileType": ".gif"
     },
 
     "awardsOrder": {
@@ -90,7 +90,7 @@
                 "count": 0
             },
             {
-                "longName": "Bronze Star Medal",
+                "longName": "Bronze Star",
                 "shortName": "BSM",
                 "device": "leafs",
                 "count": 0
