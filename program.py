@@ -40,17 +40,16 @@ def rackImage():
 
     grid = ribbonBuilder(ribbonCount).setupGrid()
     imgRack = Image.new("RGBA", (ribbonBuilder(ribbonCount).rackDimensions()["width"], ribbonBuilder(ribbonCount).rackDimensions()["height"]))
-    count = 0
 
-    for indx, val in enumerate(ribbons):
-        # TODO Get ribbon device finder
-        count += 1
-        # print(val) # DEBUGGING
-        ribbon = Image.open("./media/ribbons/"+str(val["shortName"])+".gif", "r")
+    for indx, val in enumerate(ribbons): # Build ribbons
+        device = Image.open("./media/devices/"+str(val["device"])+"/"+str(val["count"])+".png")
+        ribbon = Image.open("./media/ribbons/"+str(val["shortName"])+".png")
+        ribbon.paste(device, (0,0), device)
         imgRack.paste(ribbon, (grid[indx][0], grid[indx][1]))
-        device = Image.open("./media/devices/"+str(val["device"])+"/"+str(val["count"]+".png"))
 
     imgRack.save("Ribbon Rack.png", "PNG")
+
+    # TODO Build devices
 
     # webbrowser.open("Ribbon Rack.png")  # NOTE FOR DEBUGGING ONLY
 
