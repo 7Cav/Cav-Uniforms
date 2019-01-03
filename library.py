@@ -4,7 +4,6 @@ import re
 import requests
 from PIL import Image
 
-
 class parseMilpac:
     def __init__(self, milpacID):
         with open("config.json") as f:
@@ -34,13 +33,9 @@ class parseMilpac:
 
         return configAwards
 
-
-
-
-
 class ribbonBuilder:
     def __init__(self, ribNum):
-        '''Sets up all grid points nessecary to build a ribbon rack'''
+        '''Sets up all grid points nessecary to build a ribbon rack with Pillow'''
 
         with open("config.json") as f:
             sizes = json.load(f)["ribbonSizes"]
