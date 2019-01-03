@@ -1,5 +1,3 @@
-import webbrowser  # NOTE FOR DEBUGGING ONLY
-
 from PIL import Image
 import json
 
@@ -33,8 +31,6 @@ def rackImage():
     for val in indAwards:
         if val["count"] >= 1:
             ribbons.append(val)
-            # print(val["shortName"])
-    # print(ribbons) # DEBUGGING
     ribbons.reverse()
 
     ribbonCount = len(ribbons)
@@ -49,10 +45,6 @@ def rackImage():
         imgRack.paste(ribbon, (grid[indx][0], grid[indx][1]))
 
     imgRack.save("Ribbon Rack.png", "PNG")
-
-    # TODO Build devices
-
-    # webbrowser.open("Ribbon Rack.png")  # NOTE FOR DEBUGGING ONLY
 
     return 0
 
