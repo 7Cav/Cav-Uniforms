@@ -5,6 +5,24 @@ import json
 
 from library import ribbonBuilder, parseMilpac
 
+def testRibbons():
+    '''Function built for testing scalability of ribbon racks'''
+
+    print("Enter amount of ribbons to generate:")
+    num = int(input())
+
+    grid = ribbonBuilder(num).setupGrid()
+    imgRack = Image.new("RGBA", (ribbonBuilder(num).rackDimensions()["width"], ribbonBuilder(num).rackDimensions()["height"]))
+
+    for val in range(0, num):
+        ribbon = Image.open("./testRibbons/"+str(val+1)+".png")
+        imgRack.paste(ribbon, (grid[val][0], grid[val][1]))
+        
+    imgRack.save("Ribbon Rack.png", "PNG")
+
+    return 0
+
+
 def rackImage():
 
     ID = input()
@@ -13,7 +31,9 @@ def rackImage():
     ribbons = []
     for val in indAwards:
         if val["count"] >= 1:
-            ribbons.append(val["shortName"])
+            ribbons.append(val)
+            # print(val["shortName"])
+    # print(ribbons) # DEBUGGING
     ribbons.reverse()
 
     ribbonCount = len(ribbons)
@@ -23,13 +43,16 @@ def rackImage():
     count = 0
 
     for indx, val in enumerate(ribbons):
+        # TODO Get ribbon device finder
         count += 1
-        ribbon = Image.open("./media/ribbons/"+str(val)+".gif")
+        # print(val) # DEBUGGING
+        ribbon = Image.open("./media/ribbons/"+str(val["shortName"])+".gif", "r")
         imgRack.paste(ribbon, (grid[indx][0], grid[indx][1]))
+        device = Image.open("./media/devices/"+str(val["device"])+"/"+str(val["count"]+".png"))
 
     imgRack.save("Ribbon Rack.png", "PNG")
 
-    webbrowser.open("Ribbon Rack.png")  # NOTE FOR DEBUGGING ONLY
+    # webbrowser.open("Ribbon Rack.png")  # NOTE FOR DEBUGGING ONLY
 
     return 0
 

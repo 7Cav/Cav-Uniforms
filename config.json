@@ -24,7 +24,7 @@
                 "count": 0
             },
             {
-                "longName": "Brigadier General Krazee Lifetime Achievement Medal",
+                "longName": "James \"Krazee\" Foster Lifetime Achievement Medal",
                 "shortName": "KRAZEE",
                 "device": "leafs",
                 "count": 0
@@ -49,7 +49,7 @@
             },
             {
                 "longName": "Army Distinguished Service Medal",
-                "shortName": "DSM",
+                "shortName": "ADSM",
                 "device": "leafs",
                 "count": 0
             },
@@ -84,7 +84,7 @@
                 "count": 0
             },
             {
-                "longName": "Bronze Star with Valor",
+                "longName": "Bronze Star with Valor Device",
                 "shortName": "BSv",
                 "device": "leafsV",
                 "count": 0
@@ -126,7 +126,7 @@
                 "count": 0
             },
             {
-                "longName": "Army Commendation Medal With Valor",
+                "longName": "Army Commendation Medal with Valor Device",
                 "shortName": "ARCOMv",
                 "device": "leafsV",
                 "count": 0
@@ -159,6 +159,12 @@
                 "longName": "Army Good Conduct Medal",
                 "shortName": "GCM",
                 "device": "knots",
+                "count": 0
+            },
+            {
+                "longName": "European/African/Middle Eastern Campaign Medal",
+                "shortName": "EURAFRICA",
+                "device": "leafs",
                 "count": 0
             },
             {
@@ -294,20 +300,32 @@
                 "count": 0
             },
             {
-                "longName": "World War II Service Ribbon",
+                "longName": "WWII Service Ribbon",
                 "shortName": "WWII",
                 "device": "leafs",
                 "count": 0
             },
             {
-                "longName": "Recruiting Service Ribbon",
-                "shortName": "RSR",
+                "longName": "Recruiting Ribbon",
+                "shortName": "RR",
                 "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Ranger Selection Ribbon",
+                "shortName": "RANGER",
+                "device": "stars",
                 "count": 0
             },
             {
                 "longName": "Sniper Ribbon",
                 "shortName": "SNIPER",
+                "device": "leafs",
+                "count": 0
+            },
+            {
+                "longName": "Cadre Course Ribbon",
+                "shortName": "CADRE",
                 "device": "leafs",
                 "count": 0
             },

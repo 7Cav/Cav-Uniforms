@@ -152,7 +152,7 @@ class ribbonBuilder:
             '''Grid builder for rack width of 4 ribbons'''
 
             grid = []
-
+            
             for row in range(1, self.rows + 1):
                 if row == 1:
                     # If first row do not shift x up for 1 pixel spacing
@@ -166,41 +166,47 @@ class ribbonBuilder:
                 xVals = []
                 for i in range(1, 4 + 1):  # 4 is the max width, in ribbons, of the large rack
                     xVals.append(self.imgWidth - ((self.ribbonWidth + 1) * i))
-                # xVals = [0, 101, 202, 303] # X values where ribbons will be placed from left to right, factors in 1px spacing.
-                # xVals.reverse() # Reverses order due to grid being build on a right to left placement or ribbons
 
                 if row <= 2:  # First two rows, 4 ribbons each
+                    # print("Row #: "+str(row)) # DEBUGGING
+                    # print("Row of 4, Count is: "+str(self.ribCount)) # DEBUGGING
                     for x in xVals:
                         grid.append([x, y])
                     self.ribCount -= 4
 
-                elif row <= 5:  # Rows 3 to 5, 3 ribbons each
-                    if self.ribCount > 8:
-                        # Prep ribCount for further values
-                        self.ribCount -= 8
-                    
+                elif row <= 5:  # Rows 3 to 5, 3 ribbons each  
                     if self.ribCount >= 3:
                         # If able to build a full row of 3 ribbons
+                        # print("Row #: "+str(row)) # DEBUGGING
+                        # print("Row of 3, Count is: "+str(self.ribCount)) # DEBUGGING
                         for x in xVals[:3]:
                             grid.append([x, y])
                             self.ribCount -= 1
                     elif self.ribCount == 2:
                         # If able to build a row of 2 ribbons
+                        # print("Row #: "+str(row)) # DEBUGGING
+                        # print("Row of 2, Count is: "+str(self.ribCount)) # DEBUGGING
                         for x in xVals[:2]:
                             grid.append([x, y])
                             self.ribCount -= 1
                     else:
                         # Build a row of one ribbon
+                        # print("Row #: "+str(row)) # DEBUGGING
+                        # print("Row of 1, Count is: "+str(self.ribCount)) # DEBUGGING
                         for x in xVals[:1]:
                             grid.append([x, y])
                             self.ribCount -= 1
                         
                 else:  # Rows 6 and up, 2 ribbons each
-                    if self.ribCount >= 2:  # If 2 ribbons left
+                    if self.ribCount >= 2: # If 2 ribbons left
+                        # print("Row #: "+str(row)) # DEBUGGING
+                        # print("Row of 2, Count is: "+str(self.ribCount)) # DEBUGGING
                         for x in xVals[:2]:
                             grid.append([x, y])
                         self.ribCount -= 2
-                    else:  # If one ribbon left
+                    elif self.ribCount == 1: # If one ribbon left
+                        # print("Row #: "+str(row)) # DEBUGGING
+                        # print("Row of 1, Count is: "+str(self.ribCount)) # DEBUGGING
                         for x in xVals[:1]:
                             grid.append([x, y])
                         self.ribCount -= 1
