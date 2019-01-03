@@ -25,6 +25,7 @@ def testRibbons():
 
 def rackImage():
 
+    print("Enter trooper's Milpac ID:")
     ID = input()
     indAwards = parseMilpac(int(ID)).indAwards()
 
