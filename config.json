@@ -3,20 +3,21 @@
         "_comment": "Width and height MUST be the pixel dimensions of every ribbon image file, including devices.",
         "width": 43,
         "height": 13,
-        "fileType": ".gif"
+        "fileType": ".png"
     },
 
     "medalSizes": {
         "_comment": "Width and height MUST be the pixel dimensions of every ribbon image file, including devices.",
         "width": 0,
         "height": 0,
-        "fileType": ".gif"
+        "fileType": ".png"
     },
 
     "awardsOrder": {
+        "_comment_awardsOrder": "All items are ordered in their importantance with the first item (MOH) being the most important.",
+        "_comment_longName": "LongName is what the item appears as on a trooper's milpac page, verbatim.",
         "_comment_ShortName": "ShortName is what the file name will be w/o extension.",
         "_comment_Device": "Device much match the folder name the devices are in. see ./media/devices for folders.",
-        "_comment_Order": "All items are ordered in their importantance with the first item (MOH) being the most important.",
         "individual":[
             {
                 "longName": "Medal of Honor",
