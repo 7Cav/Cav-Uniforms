@@ -4,6 +4,13 @@ import re
 import requests
 from PIL import Image
 
+'''
+TODO:
+    -Medal Generator
+    -
+
+'''
+
 class parseMilpac:
     def __init__(self, milpacID):
         with open("config.json") as f:

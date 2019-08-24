@@ -11,7 +11,7 @@ Script functions independently of any parent directories.
 from PIL import Image, ImageFont, ImageDraw
 import os
 
-# Changes working directory so working path is 
+# Changes working directory so working path is current location.
 abspath = os.path.abspath(__file__)
 dname = os.path.dirname(abspath)
 os.chdir(dname)

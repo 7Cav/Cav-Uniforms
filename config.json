@@ -14,10 +14,10 @@
     },
 
     "awardsOrder": {
-        "_comment_awardsOrder": "All items are ordered in their importantance with the first item (MOH) being the most important.",
+        "_comment_awardsOrder": "All items are ordered in their order of precedence with the first item (MOH) being the highest.",
         "_comment_longName": "LongName is what the item appears as on a trooper's milpac page, verbatim.",
         "_comment_ShortName": "ShortName is what the file name will be w/o extension.",
-        "_comment_Device": "Device much match the folder name the devices are in. see ./media/devices for folders.",
+        "_comment_Device": "Device must match the folder name the devices are in. see ./media/devices for folders.",
         "individual":[
             {
                 "longName": "Medal of Honor",
