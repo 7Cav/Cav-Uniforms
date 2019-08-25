@@ -4,6 +4,7 @@ import re
 import requests
 from PIL import Image
 
+
 '''
 TODO:
     - Medal Generator
