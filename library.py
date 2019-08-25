@@ -6,8 +6,8 @@ from PIL import Image
 
 '''
 TODO:
-    -Medal Generator
-    -
+    - Medal Generator
+    - 
 
 '''
 
@@ -48,8 +48,7 @@ class ribbonBuilder:
             sizes = json.load(f)["ribbonSizes"]
         self.ribbonWidth = sizes["width"]
         self.ribbonHeight = sizes["height"]
-        # How much of a gap there will be between each ribbon, in pixels.
-        self.pixelGap = 1
+        self.pixelGap = 1 # How much of a gap there will be between each ribbon, in pixels.
         self.ribNum = ribNum
 
     def rackDimensions(self):
