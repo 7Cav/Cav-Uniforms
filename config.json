@@ -314,6 +314,12 @@
                 "count": 0
             },
             {
+                "longName": "D-Day Commemorative Medal",
+                "shortName": "DDAY",
+                "device": "leafs",
+                "count": 0
+            },
+            {
                 "longName": "Ranger Selection Ribbon",
                 "shortName": "RANGER",
                 "device": "stars",
