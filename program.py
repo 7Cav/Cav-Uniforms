@@ -22,6 +22,7 @@ def testRibbons():
 
 
 def rackImage():
+    "Builds .png test file of a trooper's ribbon rack"
 
     print("Enter trooper's Milpac ID:")
     ID = input()
@@ -44,8 +45,9 @@ def rackImage():
         ribbon.paste(device, (0,0), device)
         imgRack.paste(ribbon, (grid[indx][0], grid[indx][1]))
 
-    imgRack.save("Ribbon Rack.png", "PNG")
+    imgRack.save("{}.png".format(ID), "PNG")
 
     return 0
 
-rackImage()
+if __name__ == "__main__":
+    rackImage()
