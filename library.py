@@ -8,7 +8,7 @@ from PIL import Image
 '''
 TODO:
     - Medal Generator
-    - 
+    - Fix ARCOM w/ Valor duplication.
 
 '''
 
